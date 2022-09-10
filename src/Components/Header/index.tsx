@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 
 export function Header() {
   return (
@@ -9,7 +9,7 @@ export function Header() {
       width="100%"
       height={["50px", "50px", "50px", "100px"]}
     >
-      <img src="logo.svg" alt="WorldTrip" />
+      <Image src="logo.svg" alt="WorldTrip" />
     </Flex>
   );
 }
