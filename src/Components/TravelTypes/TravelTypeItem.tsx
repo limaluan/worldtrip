@@ -14,7 +14,7 @@ export function TravelTypeItem({
   width = "80px",
 }: ITravelTypeItemProps) {
   return (
-    <VStack align="center">
+    <VStack align="center" width="150px">
       <Hide breakpoint="(max-width: 1000px)">
         <Image src={src} width={width} alt={alt} />
       </Hide>
