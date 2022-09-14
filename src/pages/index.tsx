@@ -8,7 +8,6 @@ import { HomeBanner } from "../Components/HomeBanner";
 import { TravelTypes } from "../Components/TravelTypes";
 import { Slider } from "../Components/Slider";
 
-
 const Home: NextPage = () => {
   return (
     <>
