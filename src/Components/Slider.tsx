@@ -1,26 +1,27 @@
 import { Box, Heading, Image, Text, VStack } from "@chakra-ui/react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useRouter } from "next/router";
 
 export function Slider() {
-  const swiper = useSwiper();
+  const router = useRouter();
 
   return (
-    <Box maxW="1280px" h="450px" margin="50px auto">
+    <Box maxW={["375px", "1280px"]} h={["250px", "450px"]} margin="50px auto">
       <Swiper
         modules={[Navigation, Pagination, A11y, Autoplay]}
         style={{ height: "100%" }}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{delay: 5000}}
+        autoplay={{ delay: 5000 }}
       >
-        <SwiperSlide>
+        <SwiperSlide onClick={() => router.push("/europa")}>
           <VStack width="100%" height="100%" justify="center">
             <Heading color="light.heading">Europa</Heading>
             <Text color="light.info">O continente mais antigo</Text>
@@ -40,9 +41,7 @@ export function Slider() {
         <SwiperSlide>
           <VStack width="100%" height="100%" justify="center">
             <Heading color="light.heading">America</Heading>
-            <Text color="light.info" onClick={() => swiper.slideNext()}>
-              O continente do cinema
-            </Text>
+            <Text color="light.info">O continente do cinema</Text>
           </VStack>
           <Image
             position="absolute"

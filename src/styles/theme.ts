@@ -20,4 +20,7 @@ export const theme = extendTheme({
     heading: "Poppins, sans-serif",
     body: "Poppins, sans-serif",
   },
+  body: {
+    background: "#FFFAAA"
+  }
 });

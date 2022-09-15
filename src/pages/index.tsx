@@ -1,21 +1,19 @@
-import { Divider, VStack, Heading } from "@chakra-ui/react";
+import { Divider, VStack, Heading, Box } from "@chakra-ui/react";
 
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { Header } from "../Components/Header";
 import { HomeBanner } from "../Components/HomeBanner";
 import { TravelTypes } from "../Components/TravelTypes";
 import { Slider } from "../Components/Slider";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Box background="light.heading">
       <Head>
         <title>WorldTrip</title>
       </Head>
       <VStack>
-        <Header />
         <HomeBanner />
         <TravelTypes />
         <Divider
@@ -29,7 +27,7 @@ const Home: NextPage = () => {
         </Heading>
       </VStack>
       <Slider />
-    </>
+    </Box>
   );
 };
 
