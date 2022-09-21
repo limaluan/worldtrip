@@ -80,11 +80,17 @@ export default function Continent() {
           </Flex>
         </Flex>
 
-        <VStack maxW="1160px" position="relative">
+        <VStack maxW="1160px" position="relative" pt="60px">
           <Heading alignSelf="start" pb="30px" fontWeight="medium">
             Cidades +100
           </Heading>
-          <Flex width="100%" gap="45px" flexWrap="wrap" paddingBottom="1.5rem">
+          <Flex
+            width="100%"
+            gap="45px"
+            flexWrap="wrap"
+            paddingBottom="1.5rem"
+            direction={["column", "column", "row"]}
+          >
             <City />
             <City />
             <City />
