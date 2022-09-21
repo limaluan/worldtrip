@@ -22,7 +22,7 @@ export function Slider() {
         autoplay={{ delay: 5000 }}
       >
         <SwiperSlide onClick={() => router.push("/europa")}>
-          <VStack width="100%" height="100%" justify="center">
+          <VStack width="100%" height="100%" justify="center" cursor="pointer">
             <Heading color="light.heading">Europa</Heading>
             <Text color="light.info">O continente mais antigo</Text>
           </VStack>
@@ -39,7 +39,7 @@ export function Slider() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <VStack width="100%" height="100%" justify="center">
+          <VStack width="100%" height="100%" justify="center" cursor="not-allowed">
             <Heading color="light.heading">America</Heading>
             <Text color="light.info">O continente do cinema</Text>
           </VStack>
