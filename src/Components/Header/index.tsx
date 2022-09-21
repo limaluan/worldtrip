@@ -24,7 +24,12 @@ export function Header() {
         />
       )}
 
-      <Image src="logo.svg" alt="WorldTrip" />
+      <Image
+        src="logo.svg"
+        alt="WorldTrip"
+        onClick={() => router.push("/")}
+        cursor="pointer"
+      />
     </Flex>
   );
 }
